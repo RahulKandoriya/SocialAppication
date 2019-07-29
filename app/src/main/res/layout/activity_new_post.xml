@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewPostActivity"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/fab_submit_post"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/field_title"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="-96dp"
+        android:background="@color/fui_transparent"
+        android:src="@drawable/ic_send_black_24dp"
+        android:text="Submit" />
+
+
+    <EditText
+        android:id="@+id/field_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+
+        android:layout_marginTop="96dp"
+        android:layout_marginRight="16dp"
+        android:hint="Title"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/field_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginRight="16dp"
+        android:hint="Write your post..."
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:scrollHorizontally="false" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="Write Your Post"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
